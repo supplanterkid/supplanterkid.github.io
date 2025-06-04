@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday, Bestie! 🎉</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9d5e5, #fceabb);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #5a2a54;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px auto;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    button {
+      background-color: #ff6f91;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px 5px;
+    }
+    button:hover {
+      background-color: #ff3b6b;
+    }
+    #message {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 1.5rem;
+      display: none;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hey Kamum 🎉</h1>
+  <p>I’ve made something special just for you. Click the button below to see your birthday message! 🥳</p>
+
+  <button id="reveal-btn">Reveal Your Birthday Message</button>
+  <button id="back-btn" style="display:none;">Back</button>
+
+  <p id="message">
+
+Hey uappiness,
+
+On your special day, I just want to say thank you — from the bottom of my heart — for being the incredible friend you are. Our journey of friendship has been filled with laughter, unforgettable memories, and moments that I cherish deeply.
+
+I also want to apologize if sometimes I haven’t been the friend you deserve. Life gets busy, and I may have fallen short in ways you hoped I wouldn’t. Please know it was never because I didn’t care and you mean the world to me😁.
+
+I promise to be better, to be more present, and to always show up for you like you deserve. si you know you have outgrown just being my best friend — you’re family well,,practically😂.
+
+Here’s to many more years of friendship, growth, and endless support. Happy Birthday, beautiful soul. You are loved beyond words. 💖✨
+  </p>
+
+  <script>
+    const revealBtn = document.getElementById('reveal-btn');
+    const backBtn = document.getElementById('back-btn');
+    const message = document.getElementById('message');
+
+    revealBtn.addEventListener('click', () => {
+      message.style.display = 'block';
+      revealBtn.style.display = 'none';
+      backBtn.style.display = 'inline-block';
+    });
+
+    backBtn.addEventListener('click', () => {
+      message.style.display = 'none';
+      backBtn.style.display = 'none';
+      revealBtn.style.display = 'inline-block';
+    });
+  </script>
+
+</body>
+</html>
